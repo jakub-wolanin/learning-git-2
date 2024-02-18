@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Dodane tło dla body */
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    max-width: 600px;
+    /* Usunięte background-color, padding, border-radius i box-shadow */
+    margin: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+div::before,
+div::after {
+    content: open-quote;
+    font-size: 18px;
+    color: #888;
+}
+
+div p {
+    margin: 10px 0;
+}
+
+div strong {
+    font-weight: bold;
+}
+
+div em {
+    font-style: italic;
+}
